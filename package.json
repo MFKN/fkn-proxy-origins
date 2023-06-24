@@ -1,0 +1,14 @@
+{
+  "name": "fkn-proxy-origins",
+  "version": "0.0.0",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --mode development --watch",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  }
+}
