@@ -1,6 +1,7 @@
 import { builtinModules } from 'module'
 
 import { defineConfig } from 'vite'
+import typescript2 from "rollup-plugin-typescript2"
 
 import packageJson from './package.json'
 
@@ -20,5 +21,13 @@ export default defineConfig({
         ...Object.keys(packageJson.dependencies ?? {})
       ]
     }
-  }
+  },
+  plugins: [
+    {
+      ...typescript2({
+        abortOnError: false
+      }),
+      apply: 'build'
+    }
+  ]
 })

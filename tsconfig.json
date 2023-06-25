@@ -7,11 +7,12 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
+    "emitDeclarationOnly": true,
+    "declaration": true,
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
 
     /* Linting */
     "strict": true,

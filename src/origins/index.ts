@@ -1,1 +1,1 @@
-export * as jikan from './jikan'
+export { default as jikan } from './jikan'
