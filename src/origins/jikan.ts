@@ -1,6 +1,9 @@
 
 export default {
   origin: 'api.jikan.moe',
+  cache: {
+    ttl: 1000 * 60 * 60 * 1
+  },
   throttles: [
     {
       limit: 3,
