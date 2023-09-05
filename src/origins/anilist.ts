@@ -9,5 +9,8 @@ export default {
       limit: 2,
       interval: 1_000
     }
-  ]
+  ],
+  shouldCachePost: () => {
+    return true
+  }
 }
