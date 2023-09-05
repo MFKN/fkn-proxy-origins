@@ -7,7 +7,7 @@ export default {
   throttles: [
     {
       limit: 3,
-      interval: 3000
+      interval: 4000
     },
     {
       limit: 60,
