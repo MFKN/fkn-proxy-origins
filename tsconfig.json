@@ -1,22 +1,19 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "useDefineForClassFields": true,
     "module": "es2020",
     "lib": ["es2020"],
 
-    "outDir": "build",
-
-    /* Bundler mode */
-    "declaration": true,
-    "moduleResolution": "bundler",
+    "noEmit": true,
+    "moduleResolution": "node",
     "isolatedModules": true,
 
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "useDefineForClassFields": true
   },
   "include": ["src"]
 }

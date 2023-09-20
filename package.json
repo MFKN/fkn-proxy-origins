@@ -4,9 +4,10 @@
   "main": "build/index.js",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && esbuild --bundle --outfile=build/index.js --format=esm --platform=node src/index.ts"
   },
   "devDependencies": {
-    "typescript": "^5.0.2"
+    "esbuild": "^0.19.3",
+    "typescript": "^5.2.2"
   }
 }
