@@ -1,15 +1,12 @@
 {
-  "name": "fkn-proxy-origins",
+  "name": "@fkn/proxy-origins",
   "version": "0.0.0",
   "main": "build/index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite build --mode development --watch",
-    "build": "tsc && vite build"
+    "build": "tsc"
   },
   "devDependencies": {
-    "rollup-plugin-typescript2": "^0.35.0",
-    "typescript": "^5.0.2",
-    "vite": "^4.3.9"
+    "typescript": "^5.0.2"
   }
 }
