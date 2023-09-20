@@ -60,7 +60,7 @@ jobs:
           path: build
 
       - name: Set NPM version
-        run: npm version ${{ needs.bump-version.outputs.version }}
+        run: npm version --no-git-tag-version ${{ needs.bump-version.outputs.version }}
 
       - name: Publish to NPM
         uses: JS-DevTools/npm-publish@v1
