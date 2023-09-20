@@ -59,8 +59,10 @@ jobs:
           name: build
           path: build
 
+      - name: Set NPM version
+        run: npm version ${{ needs.bump-version.outputs.version }}
+
       - name: Publish to NPM
         uses: JS-DevTools/npm-publish@v1
         with:
-          tag: ${{ needs.bump-version.outputs.version }}
           token: ${{ secrets.NPM_TOKEN }}
