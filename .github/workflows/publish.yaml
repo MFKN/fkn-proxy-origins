@@ -42,6 +42,7 @@ jobs:
           tag_name: ${{ steps.calver.outputs.version }}
 
   publish:
+    name: Publish to NPM
     runs-on: ubuntu-latest
     needs: bump-version
     permissions:
